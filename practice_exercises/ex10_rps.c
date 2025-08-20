@@ -11,8 +11,8 @@ int main() {
     printf("\n\n\n---------- ROCK PAPER SCISSORS ----------\n\n");
     printf("CHOOSE 1 FOR ROCK\nCHOOSE 2 FOR PAPER\nCHOOSE 3 FOR SCISSORS\n\n");
     
-        int user = getUserChoice();
-        int comp = getCompChoice();
+    int user = getUserChoice();
+    int comp = getCompChoice();
 
     checkWinner(user, comp);
 
