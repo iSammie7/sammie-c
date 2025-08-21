@@ -11,7 +11,7 @@ int main() {
     // float = Single-precision decimal number (4 bytes)
     // double = Double precision decimal numbers. (8 bytes)
     // char = Single Character. (1 byte)
-    // char{} = An array of characters, also known as strings. (varies in size)
+    // char[] = An array of characters, also known as strings. (varies in size)
     // bool = True or False (1 byte, requires <stdbool.h>)
 
     return 0;
