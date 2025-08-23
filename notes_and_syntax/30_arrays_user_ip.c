@@ -37,7 +37,7 @@ int main() {
     // printf("%d ", scores[3]);
     // printf("%d ", scores[4]);
 
-    // Faster to do with a for loop..
+    // Faster to do with a for loop.
 
     int size = sizeof(scores) / sizeof(scores[0]);
 
@@ -51,4 +51,5 @@ int main() {
         }
 
     return 0;
+
 }
