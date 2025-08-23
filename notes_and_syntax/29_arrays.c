@@ -8,16 +8,16 @@ int main() {
     int values[] = {5, 25, 125, 625, 3125};
 
     // Normally, if you pass an array to a function like this, it decays into a pointer.
-    // More on this later...
     printf("%d\n", values);
 
     // Each value in an array is called an element.
     // You can print elements in an array by index.
     printf("%d\n", values[2]);
 
-    // If you try to acces an elemtn that doesn't exist, you get an unusal value.
+    // If you try to access an element that doesn't exist, you get an unusual value.
     // Unlike many other programming languages, where you get out of bounds exceptions.
-    // You can go out of bounds when working with arrays.
+    // You can go out of bounds when working with arrays in C.
+    // Be careful because this can cause undefined behaviour in programs.
 
     char grades[] = {'A', 'B', 'C', 'D', 'F'};
     printf("%c\n", grades[0]);
@@ -42,14 +42,14 @@ int main() {
     // An easier way to display all the elements of an array is to use a for loop.
 
     for(int i = 0; i < 5; i ++){
-        printf("%d ", grades[i]);
+        printf("%c ", grades[i]);
     }
     
     // To automatically calculate the size of an array, you can do this:-
     
     printf("%d\n", sizeof(values)); // Returns the size of the array.
     printf("%d\n", sizeof(values[0])); // Returns the size of each element.
-    // btw, the reason we use 0 here because not arrays have multiple elements.
+    // btw, the reason we use 0 here because not all arrays have multiple elements.
     
     // Now, the trick to calculate the number of elements in the array is..
     
@@ -63,4 +63,3 @@ int main() {
     // You can do this with any array.
 
     return 0;
-}
